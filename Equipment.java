@@ -125,11 +125,15 @@ public class Equipment
         // Check that all fields match (name, count, totalWeight, totalPrice, and description):
       
         // TODO: finish method
-        if((otherEq.name == this.name) && (otherEq.count==this.count) && (otherEq.totalWeight==this.totalWeight) && (otherEq.totalPrice == this.totalPrice) && (otherEq.description==this.description))
+        if((otherEq.name.equals(this.name)) && (otherEq.count == this.count) && (otherEq.totalWeight == this.totalWeight) && (otherEq.totalPrice == this.totalPrice) && (otherEq.description.equals(this.description)))
         {
         	return true;
         }
-        else { return false;}
+        else 
+        {
+        	
+        	return false;
+        }
         
     }
 }
