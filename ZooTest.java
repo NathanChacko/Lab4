@@ -1,4 +1,4 @@
-public class ZooTest{
+0public class ZooTest{
 	
 	
 	//Test these methods

@@ -11,7 +11,7 @@ public class EquipmentTest{
 		    Assert.assertTrue(testEquipment.getName().equals("Batmobile"));
 		    Assert.assertEquals(1, testEquipment.getCount(), 0.01);
 		    Assert.assertEquals(2000.1, testEquipment.getTotalWeight(), 0.01);
-		    Assert.assertEquals(1000.0, testEquipment.getTotalPrice(), 0.01);
+		    Assert.assertEquals(1000.00, testEquipment.getTotalPrice(), 0.01);
 		    Assert.assertTrue(testEquipment.getDescription().equals("very fast"));
 		    
 	    }
