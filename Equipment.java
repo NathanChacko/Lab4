@@ -99,7 +99,7 @@ public class Equipment
      * Override the equals method for equipment. Equipment are considered equal
      * if the name, count, totalWeight, totalPrice, and description are the same.
      *
-     * @param other The other animal to compare to.
+     * @param other The other equipment to compare to.
      * @returns True if all fields (name, count, totalWeight, totalPrice, and description)
      * are equal, false otherwise.
      */
@@ -125,5 +125,11 @@ public class Equipment
         // Check that all fields match (name, count, totalWeight, totalPrice, and description):
       
         // TODO: finish method
+        if((otherEq.name == this.name) && (otherEq.count==this.count) && (otherEq.totalWeight==this.totalWeight) && (otherEq.totalPrice==this.totalWeight) && (otherEq.description==this.description))
+        {
+        	return true;
+        }
+        else { return false;}
+        
     }
 }

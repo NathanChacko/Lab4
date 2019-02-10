@@ -141,16 +141,19 @@ public class Zoo
     		return 0;
     	int numMatch = 0;
         double totalWeight = 0;
+        
         for (int i = 0; i < numAnimals; i++) 
         {
             Animal animal = animals[i];
             // Only compute if the colors match:
             if (animal.getColor().equalsIgnoreCase(color))
             {
+            	
             	numMatch++;
             	totalWeight += animal.getWeight();
             }
         }
+        
         return (int) (totalWeight / numMatch);
     }
 
@@ -161,6 +164,7 @@ public class Zoo
      */
     public Animal[] getAnimals()
     {
+    	
         return animals;
     }
     
@@ -171,6 +175,7 @@ public class Zoo
      */
     public int getCapacity()
     {
+    	
     	return capacity;
     }
 
@@ -184,11 +189,13 @@ public class Zoo
     public String toString() 
     {
         String result = "These animals live in the zoo: \n";
+        
         for (int i = 0; i < numAnimals; ++i) 
         {
             // add each Animal toString in the array to the result string
             result += animals[i].toString();
         }
+        
         return result;
     }
 }

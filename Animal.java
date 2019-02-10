@@ -105,8 +105,7 @@ public class Animal
     @Override
 	public String toString()
     {
-        return String.format("%s, a %s-colored animal. %.1f pounds, %.1f inches\n",
-                this.name, this.color, this.weight, this.height);
+        return String.format("%s, a %s-colored animal. %.1f pounds, %.1f inches\n", this.name, this.color, this.weight, this.height);
     }
 
     /**
@@ -139,8 +138,14 @@ public class Animal
         Animal otherAni = (Animal)other;
 
         // Check that all fields match (color, name, weight, height):
-        
-        // TODO: finish this...
+        if ((otherAni.name == this.name) && (otherAni.color == this.color) && (otherAni.weight == this.weight) && (otherAni.height == this.height)) {
+        	
+        	return true;
+        }
+        else {
+        	
+        	return false;
+        }
         
         /* return TODO; */
     }
